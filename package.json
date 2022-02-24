@@ -1,6 +1,6 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.0.7",
+  "version": "19.0.8",
   "scripts": {
     "bootstrap": "clear && npx lerna bootstrap",
     "start": "npm run start:dev",
