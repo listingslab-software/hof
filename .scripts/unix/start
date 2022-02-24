@@ -5,5 +5,4 @@ clear
 echo "Starting Dev"
 
 ttab -t 'root-config' -d ./packages/root-config npm start
-ttab -t 'nav' -d ./packages/nav npm start
-ttab -t 'dashboard' -d ./packages/dashboard npm start
+ttab -t 'appshell' -d ./packages/appshell npm start

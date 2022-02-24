@@ -1,5 +1,6 @@
 {
   "name": "@listingslab/hof",
+  "version": "19.0.7",
   "scripts": {
     "bootstrap": "clear && npx lerna bootstrap",
     "service": "$PWD/.scripts/unix/service",
@@ -7,10 +8,9 @@
     "start:root": "webpack serve --port 9000 --env isLocal",
     "start:nav": "cd ./packages/nav && npm start",
     "start:dashboard": "cd ./packages/dashboard && npm start",
-
     "new-app": "clear && npx create-single-spa",
     "build": "clear && npx lerna run build",
-    "dist": "$PWD/.scripts/unix/dist",
+    "dist": "$PWD/.scripts/unix/dist 19.0.7",
     "test": "echo Test results are fine, thanks. How are you?",
     "lint": "clear && cd ./packages/service && npm run lint:fix",
     "deploy": "clear && npm run lint && npm run build && npm run dist && firebase deploy"
