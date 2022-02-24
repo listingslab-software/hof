@@ -1,5 +1,5 @@
 #!/bin/bash
-# chmod ug+x start
+# chmod ug+x dev
 clear
 
 echo "Starting Dev"
