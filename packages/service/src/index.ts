@@ -5,6 +5,13 @@ import {personas} from "./endpoints/personas";
 import express from "express";
 import cors from "cors";
 
+const SSR = express();
+SSR.use(cors({origin: true}));
+SSR.get("*", (req:any, res:any) => {
+  res.status(200).send("nice SSR, mate");
+})
+exports.SSR = functions.https.onRequest(SSR);
+
 console.log(pJSON.name + " vs " + pJSON.version);
 
 const HOFService = express();

@@ -1,4 +1,5 @@
 {
+  "version": "5.0.0",
   "name": "@listingslab/hof-service",
   "main": "lib/src/index.js",
   "scripts": {
