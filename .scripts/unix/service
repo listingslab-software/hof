@@ -1,0 +1,9 @@
+#!/bin/bash
+# chmod ug+x service
+clear
+
+echo "Starting Service"
+
+ttab -t 'service' -d ./packages/service npm run serve
+ttab -t 'service' -d ./packages/service npm run watch
+npm run
