@@ -7,7 +7,7 @@
     "build": "clear && npx lerna run build",
     "dist": "$PWD/.scripts/unix/dist",
     "test": "echo Test results are fine, thanks. How are you?",
-    "deploy": "clear && npm run build && npm run dist && firebase deploy --only hosting"
+    "deploy": "clear && npm run build && npm run dist && firebase deploy"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
