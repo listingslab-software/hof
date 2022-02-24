@@ -1,0 +1,7 @@
+_ASSETS
+.DS_Store
+build
+.firebase
+node_modules
+dist
+firebase-debug.log

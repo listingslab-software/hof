@@ -1,0 +1,15 @@
+{
+  "name": "@listingslab/hof",
+  "scripts": {
+    "bootstrap": "clear && npx lerna bootstrap",
+    "start": "clear && cd ./packages/root-config && npm start",
+    "new-app": "npx create-single-spa",
+    "build": "clear && npx lerna run build",
+    "dist": "$PWD/.scripts/unix/dist",
+    "test": "echo Test results are fine, thanks. How are you?",
+    "deploy": "clear && npm run build && npm run dist && firebase deploy --only hosting"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
