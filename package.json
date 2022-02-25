@@ -9,7 +9,7 @@
     "start:functions": "$PWD/.scripts/unix/functions",
     "new-app": "clear && npx create-single-spa",
     "build": "clear && npx lerna run build",
-    "lint": "clear && cd ./packages/functions && npm run lint:fix",
+    "lint": "clear && cd ./packages/functions && npm run lint",
     "deploy": "clear && npm run lint && npm run build && npm run dist && firebase deploy",
     "deploy:hosting": "clear && firebase deploy --only hosting",
     "deploy:functions": "clear && firebase deploy --only functions",
