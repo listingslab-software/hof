@@ -1,0 +1,9 @@
+#!/bin/bash
+# chmod ug+x functions
+clear
+
+echo "Starting functions"
+
+ttab -t 'service' -d ./packages/functions npm run serve
+ttab -t 'service' -d ./packages/functions npm run watch
+npm run

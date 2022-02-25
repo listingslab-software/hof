@@ -2,16 +2,18 @@
   "name": "@listingslab/hof",
   "version": "19.0.8",
   "scripts": {
+    "dist": "$PWD/.scripts/unix/dist 19.0.8",
     "bootstrap": "clear && npx lerna bootstrap",
     "start": "npm run start:dev",
     "start:dev": "$PWD/.scripts/unix/dev",
-    "start:service": "$PWD/.scripts/unix/service",
+    "start:functions": "$PWD/.scripts/unix/functions",
     "new-app": "clear && npx create-single-spa",
     "build": "clear && npx lerna run build",
-    "dist": "$PWD/.scripts/unix/dist 19.0.7",
-    "test": "echo Test results are fine, thanks. How are you?",
-    "lint": "clear && cd ./packages/service && npm run lint:fix",
-    "deploy": "clear && npm run lint && npm run build && npm run dist && firebase deploy"
+    "lint": "clear && cd ./packages/functions && npm run lint:fix",
+    "deploy": "clear && npm run lint && npm run build && npm run dist && firebase deploy",
+    "deploy:hosting": "clear && firebase deploy --only hosting",
+    "deploy:functions": "clear && firebase deploy --only functions",
+    "test": "echo Test results are fine, thanks. How are you?"
   },
   "devDependencies": {
     "lerna": "^4.0.0"

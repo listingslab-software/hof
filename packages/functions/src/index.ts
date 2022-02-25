@@ -1,15 +1,17 @@
 import pJSON from "../package.json";
 import * as functions from "firebase-functions";
-import {routes} from "./api/routes";
 import express from "express";
 import cors from "cors";
+
+import {routes} from "./api/routes";
+import makeHTML from "./ssr/makeHTML";
 
 console.log(pJSON.name + " vs " + pJSON.version);
 
 const SSR = express();
 SSR.use(cors({origin: true}));
 SSR.get("*", (req:any, res:any) => {
-  res.status(200).send("nice SSR, mate");
+  res.status(200).send(makeHTML(req));
 });
 
 const API = express();
