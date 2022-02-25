@@ -2,7 +2,8 @@
 
 const importsProd = `"imports": {
         "@listingslab/root-config": "https://listingslab.com/root-config/listingslab-root-config.js",
-        "@listingslab/appshell": "https://listingslab.com/appshell/listingslab-appshell.js"
+        "@listingslab/appshell": "https://listingslab.com/appshell/listingslab-appshell.js",
+        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
       }`;
 
 // const importsDev = `"imports": {
@@ -23,14 +24,14 @@ export default function makeHTML(req:any) {
     <meta name="importmap-type" content="systemjs-importmap" />
     <script type="systemjs-importmap">
       {
-        ${ importsProd }
+        "imports": {
+          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+        }
       }
     </script>
     <script type="systemjs-importmap">
       {
-        "imports": {
-          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
-        }
+        ${ importsProd }
       }
     </script>
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
