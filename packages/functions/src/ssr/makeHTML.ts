@@ -3,7 +3,8 @@
 const importsProd = `"imports": {
         "@listingslab/root-config": "https://listingslab.com/root-config/listingslab-root-config.js",
         "@listingslab/appshell": "https://listingslab.com/appshell/listingslab-appshell.js",
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
+        "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"
       }`;
 
 // const importsDev = `"imports": {

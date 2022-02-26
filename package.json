@@ -1,8 +1,8 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.0.8",
+  "version": "19.0.9",
   "scripts": {
-    "dist": "$PWD/.scripts/unix/dist 19.0.8",
+    "dist": "$PWD/.scripts/unix/dist 19.0.9",
     "bootstrap": "clear && npx lerna bootstrap",
     "start": "npm run start:dev",
     "start:dev": "$PWD/.scripts/unix/dev",
