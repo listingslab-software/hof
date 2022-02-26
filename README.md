@@ -6,7 +6,6 @@
 
 By the early 2000s, a GIF animation depicting the opening text was widespread on the Something Awful message forums and other internet forums.[3] The phrase found popular reference outside internet forums through the 2000s and 2010s, including use by Newgrounds in 2001.
 
-
 #### Features 
 
 - Lerna monorepo 
@@ -14,7 +13,7 @@ https://lerna.js.org
 
 [Lerna](https://github.com/lerna/lerna) is a tool that optimizes the workflow around managing multi-package repositories with git and npm.
 
-- Single SPA
+#### Single SPA
 
 [single-spa.js](https://single-spa.js.org) is an Open Source framework for bringing together multiple JavaScript microfrontends in a frontend application. Architecting your frontend using single-spa enables many benefits, such as:
 
@@ -57,7 +56,4 @@ Yep.
 
 #### Keywords
 
-single-spa, microfrontend, open source,
-
-
-
+single-spa, microfrontend, open source

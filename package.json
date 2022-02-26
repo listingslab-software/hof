@@ -4,9 +4,8 @@
   "scripts": {
     "dist": "$PWD/.scripts/unix/dist 19.0.9",
     "bootstrap": "clear && npx lerna bootstrap",
-    "start": "npm run start:dev",
-    "start:dev": "$PWD/.scripts/unix/dev",
-    "start:functions": "$PWD/.scripts/unix/functions",
+    "start": "$PWD/.scripts/unix/dev",
+    "functions": "$PWD/.scripts/unix/functions",
     "new-app": "clear && npx create-single-spa",
     "build": "clear && npx lerna run build",
     "lint": "clear && cd ./packages/functions && npm run lint",
