@@ -13,6 +13,8 @@ Now think of features as separate modules which can be loaded into a main app wh
 
 That’d be good, right? Turns our there’s nothing new under the sun & Micro Frontends - a microservice style approach to front-end web development has been around for a little while and is used by companies like Spotify
 
+- [/packages](./packages/)
+
 #### Lerna 
 
 - [Lerna](https://github.com/lerna/lerna) is a tool that optimizes the workflow around managing multi-package repositories with git and npm

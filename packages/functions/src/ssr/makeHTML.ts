@@ -123,6 +123,10 @@ var ssr = ${JSON.stringify(content, null, 2)};
                 API
             </a>
             &nbsp;|&nbsp;
+            <a href="https://github.com/listingslab-software/hof" target="_blank">
+                Open Source
+            </a>
+            &nbsp;|&nbsp;
             Unlicensed software&nbsp;
             <a href="https://github.com/orgs/listingslab-software" target="_blank">
                 by listingslab
