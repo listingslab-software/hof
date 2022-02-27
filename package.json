@@ -1,21 +1,20 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.1.5",
+  "version": "19.1.6",
   "scripts": {
-    "dist": "$PWD/.scripts/unix/dist 19.1.5",
+    "test": "clear && cd ./packages/appshell && npm test",
     "start": "clear && npm run dev",
-    "bootstrap": "clear && npx lerna bootstrap",
     "dev": "$PWD/.scripts/unix/dev",
-    "ssr": "$PWD/.scripts/unix/ssr",
-    "functions": "$PWD/.scripts/unix/functions",
+    "build": "clear && npx lerna run build && npm run dist",
+    "dist": "$PWD/.scripts/unix/dist 19.1.6",
     "serve": "clear && serve dist",
+    "ssr": "$PWD/.scripts/unix/ssr",
+    "functions": "clear && cd ./packages/functions && npm run serve",
+    "functions:dev": "clear && cd ./packages/functions && npm run serve",
+    "bootstrap": "clear && npx lerna bootstrap",
     "new-app": "clear && npx create-single-spa",
-    "build": "clear && npx lerna run build",
-    "test": "echo Test results are fine, thanks. How are you?",
     "lint": "clear && cd ./packages/functions && npm run lint",
-    "deploy:hosting": "clear && firebase deploy --only hosting",
-    "deploy:functions": "clear && firebase deploy --only functions",
-    "deploy": "clear && npm run lint && npm run build && npm run dist && firebase deploy"
+    "deploy": "clear && npm run lint && npm run build && firebase deploy"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
