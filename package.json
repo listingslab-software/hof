@@ -1,16 +1,18 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.1.0",
+  "version": "19.1.2",
   "scripts": {
-    "start": "clear && npm run functions && npm run dev",
+    "dist": "$PWD/.scripts/unix/dist 19.1.2",
+    "start": "clear && npm run dev",
     "bootstrap": "clear && npx lerna bootstrap",
     "dev": "$PWD/.scripts/unix/dev",
+    "ssr": "$PWD/.scripts/unix/ssr",
     "functions": "$PWD/.scripts/unix/functions",
+    "serve": "clear && serve dist",
     "new-app": "clear && npx create-single-spa",
     "build": "clear && npx lerna run build",
     "test": "echo Test results are fine, thanks. How are you?",
     "lint": "clear && cd ./packages/functions && npm run lint",
-    "dist": "$PWD/.scripts/unix/dist 19.1.0",
     "deploy:hosting": "clear && firebase deploy --only hosting",
     "deploy:functions": "clear && firebase deploy --only functions",
     "deploy": "clear && npm run lint && npm run build && npm run dist && firebase deploy"

@@ -1,0 +1,7 @@
+#!/bin/bash
+# chmod ug+x ssr
+clear
+
+echo "Starting SSR"
+ttab -t 'functions' npm run functions
+ttab -t 'appshell' npm run serve
