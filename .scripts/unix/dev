@@ -3,6 +3,5 @@
 clear
 
 echo "Starting Dev"
-
 ttab -t 'root-config' -d ./packages/root-config npm start
 ttab -t 'appshell' -d ./packages/appshell npm start

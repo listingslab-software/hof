@@ -1,3 +1,10 @@
+/*
+        <aside>
+          <h4>Persona</h4>
+          <p>pathname & hostname?</p>
+        </aside>
+*/
+
 /* eslint-disable */
 
 // const importsProd = `"imports": {

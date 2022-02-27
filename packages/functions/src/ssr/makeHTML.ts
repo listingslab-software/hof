@@ -15,20 +15,24 @@
 export default function makeHTML(req:any) {
 
   const content = {
+    assets: "http://localhost:3000",
     siteURL: "http://listingslab.com",
     siteTitle: "@listingslab",
     siteIcon: "http://listingslab.com/png/logo192.png",
-    title: "This is the content title",
-    excerpt: "This is the excerpt",
-    body: "<p>And here is the body text (as HTML)</p>"
+    title: "All your base",
+    excerpt: "All your base are belong to us is a popular Internet meme based on a badly translated phrase from the opening cutscene of the video game Zero Wing",
+    body: "<p>Don't believe?  <a href='https://en.wikipedia.org/wiki/All_your_base_are_belong_to_us' target='_blank'>check wikipedia</a>. By the early 2000s, a GIF animation depicting the opening text was widespread on the Something Awful message forums and other internet forums.[3] The phrase found popular reference outside internet forums through the 2000s and 2010s, including use by Newgrounds in 2001.</p>",
+    image: "http://listingslab.com/png/Aybabtu.png",
   };
   const {
+    assets,
     title,
     excerpt,
     body,
     siteTitle,
     siteIcon,
     siteURL,
+    image,
   } = content;
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -41,13 +45,16 @@ export default function makeHTML(req:any) {
     <link rel="icon" href="https://listingslab.com/favicon.ico" />
     <meta name="theme-color" content="#006c72" />
     <meta name="description" content=${excerpt} />
-    <link rel="apple-touch-icon" href="https://listingslab.com/png/logo512.png" />
+    <link rel="apple-touch-icon" href="${assets}/png/logo512.png" />
+    <link type="text/css" href="${assets}/css/listingslab.css" rel="stylesheet" />
 
-    <link type="text/css" href="https://listingslab.com/css/meyerweb-reset.css" rel="stylesheet" />
-    <link type="text/css" href="https://listingslab.com/css/listingslab.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
     
     <meta name="msapplication-TileColor" content="#006c72">
-    <meta name="msapplication-TileImage" content="https://listingslab.com/png/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="${assets}/png/ms-icon-144x144.png">
     <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
     <meta name="importmap-type" content="systemjs-importmap" />
     <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
@@ -65,37 +72,38 @@ export default function makeHTML(req:any) {
     </a>(PWA)</noscript>
 
     <div id="ssr" class="wrapper">
-
-      <nav>
-        <a href="${siteURL}" target="_self" title="${title}">
-          <img class="siteIcon" src="${siteIcon}" alt="${siteIcon}" />
-        </a>
-        <ul>
-          <li><a href="https://listingslab.com/work/" target="_self">work</a></li>
-          <li><a href="https://listingslab.com/life/" target="_self">life</a></li>
-          <li><a href="https://listingslab.com/balance/" target="_self">balance</a></li>
-        </ul>
-      </nav>
-
+      <header>
+        
+        <nav>
+          <a href="${siteURL}" target="_self" title="${title}">
+            <img class="siteIcon" src="${siteIcon}" alt="${siteIcon}" />
+          </a>
+          <ul>
+            <li><a href="https://listingslab.com/work/" target="_self">work</a></li>
+            <li><a href="https://listingslab.com/life/" target="_self">life</a></li>
+            <li><a href="https://listingslab.com/balance/" target="_self">balance</a></li>
+          </ul>
+        </nav>
+        <h1>${title}</h1>
+      </header>
       <section>
         <article>
           <header>
-            <h1>${title}</h1>
-            <p>${excerpt}</p>
+            <img class="image" src="${image}" align="right"/>
+            <h2>${excerpt}</h2>
+            
           </header>
           ${body}
         </article>
 
-        <aside>
-          <h4>Persona</h4>
-          <p>pathname & hostname?</p>
-        </aside>
-
       </section>
 
       <footer>
-        <p>Author: milky</p>
-        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+        <p>
+          <a href="https://github.com/orgs/listingslab-software" target="_blank">
+              unlicensed software by listingslab
+          </a>
+        </p>
       </footer>
     </div>
   </body>
