@@ -1,12 +1,12 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.1.6",
+  "version": "19.1.7",
   "scripts": {
     "test": "clear && cd ./packages/appshell && npm test",
     "start": "clear && npm run dev",
     "dev": "$PWD/.scripts/unix/dev",
     "build": "clear && npx lerna run build && npm run dist",
-    "dist": "$PWD/.scripts/unix/dist 19.1.6",
+    "dist": "$PWD/.scripts/unix/dist 19.1.7",
     "serve": "clear && serve dist",
     "ssr": "$PWD/.scripts/unix/ssr",
     "functions": "clear && cd ./packages/functions && npm run serve",
