@@ -2,6 +2,9 @@
 # chmod ug+x ssr
 clear
 
-echo "Starting SSR"
+echo "Server Side Rendering"
 ttab -t 'functions' npm run functions
+ttab -t 'watch' npm run functions:watch
 ttab -t 'appshell' npm run serve
+ttab -t 'root-config' -d ./packages/main npm start
+ttab -t 'appshell' -d ./packages/appshell npm start

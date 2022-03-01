@@ -2,8 +2,6 @@
 # chmod ug+x dev
 clear
 
-echo "Starting Dev"
-ttab -t 'root-config' -d ./packages/root-config npm start
+echo "Open http://localhost:9000"
+ttab -t 'root-config' -d ./packages/main npm start
 ttab -t 'appshell' -d ./packages/appshell npm start
-echo "Navigate to http://localhost:9000"
-echo ""
