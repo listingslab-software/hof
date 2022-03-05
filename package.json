@@ -1,6 +1,6 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.2.0",
+  "version": "19.2.1",
   "scripts": {
     "start": "clear && npm run ssr",
     "bootstrap": "clear && npx lerna bootstrap",
@@ -10,7 +10,7 @@
     "lint": "clear && cd ./packages/functions && npm run lint",
     "build": "clear && npm run files && npx lerna run build && npm run dist",
     "files": "clear && cd ./packages/appshell/public/files && node index.mjs",
-    "dist": "$PWD/.scripts/unix/dist 19.2.0",
+    "dist": "$PWD/.scripts/unix/dist 19.2.1",
     "serve": "clear && serve dist",
     "ssr": "$PWD/.scripts/unix/ssr",
     "functions": "clear && cd ./packages/functions && npm run serve",
