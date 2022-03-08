@@ -9,5 +9,8 @@ ttab -t 'watch' npm run functions:watch
 ttab -t 'appshell' npm run serve
 ttab -t 'root-config' -d ./packages/main npm start
 ttab -t 'appshell' -d ./packages/appshell npm start
-
+ttab -t 'menu' -d ./packages/menu npm start
+clear
+echo "Started Single SPA with Server Side Rendering"
 echo "http://localhost:5001/listingslab-pingpong/us-central1/SSR"
+echo ""
