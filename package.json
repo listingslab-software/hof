@@ -11,7 +11,7 @@
     "build": "clear && npm run files && npx lerna run build && npm run dist",
     "files": "clear && cd ./packages/appshell/public/files && node index.mjs",
     "dist": "$PWD/.scripts/unix/dist 19.2.4",
-    "serve": "clear && serve dist",
+    "serve": "clear && serve dist -p 2022",
     "ssr": "$PWD/.scripts/unix/ssr",
     "functions": "clear && cd ./packages/functions && npm run serve",
     "functions:watch": "clear && cd ./packages/functions && npm run watch",
