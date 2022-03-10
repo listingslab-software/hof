@@ -6,14 +6,13 @@
     "bootstrap": "clear && npx lerna bootstrap",
     "new-app": "clear && npx create-single-spa",
     "dev": "$PWD/.scripts/unix/dev",
-    "test": "clear && cd ./packages/appshell && npm test",
-    "lint": "clear && cd ./packages/functions && npm run lint",
+    "lint": "clear && cd ./packages/firebase && npm run lint",
     "build": "clear && npx lerna run build && npm run dist",
     "dist": "$PWD/.scripts/unix/dist 19.2.7",
     "serve": "clear && serve dist -p 2022",
     "ssr": "$PWD/.scripts/unix/ssr",
-    "functions": "clear && cd ./packages/functions && npm run serve",
-    "functions:watch": "clear && cd ./packages/functions && npm run watch",
+    "functions": "clear && cd ./packages/firebase && npm run serve",
+    "functions:watch": "clear && cd ./packages/firebase && npm run watch",
     "deploy": "clear && npm run lint && npm run build && firebase deploy"
   },
   "devDependencies": {
