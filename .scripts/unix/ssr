@@ -1,17 +1,17 @@
 #!/bin/bash
 # chmod ug+x ssr
 clear
+
 ttab -t 'functions' npm run functions
 ttab -t 'watch' npm run functions:watch
 ttab -t 'appshell' npm run serve
 ttab -t 'root-config' -d ./packages/main npm start
-ttab -t 'appshell' -d ./packages/appshell npm start
 ttab -t 'menu' -d ./packages/menu npm start
 ttab -t 'persona' -d ./packages/persona npm start
 ttab -t 'auth' -d ./packages/auth npm start
 ttab -t 'shared' -d ./packages/shared npm start
 
 clear
-echo "Started Single SPA with Server Side Rendering"
-echo "http://localhost:5001/listingslab-pingpong/us-central1/SSR"
+echo "Started Listingslab Single SPA with Server Side Rendering"
+echo "http://localhost:5001/listingslab-app/us-central1/SSR"
 echo ""
