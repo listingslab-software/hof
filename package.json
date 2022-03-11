@@ -1,6 +1,6 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.2.7",
+  "version": "19.2.8",
   "scripts": {
     "start": "clear && npm run ssr",
     "bootstrap": "clear && npx lerna bootstrap",
@@ -8,7 +8,7 @@
     "dev": "$PWD/.scripts/unix/dev",
     "lint": "clear && cd ./packages/firebase && npm run lint",
     "build": "clear && npx lerna run build && npm run dist",
-    "dist": "$PWD/.scripts/unix/dist 19.2.7",
+    "dist": "$PWD/.scripts/unix/dist 19.2.8",
     "serve": "clear && serve dist -p 2022",
     "ssr": "$PWD/.scripts/unix/ssr",
     "functions": "clear && cd ./packages/firebase && npm run serve",
