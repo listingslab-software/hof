@@ -1,7 +1,0 @@
-#!/bin/bash
-# chmod ug+x dev
-clear
-
-echo "Open http://localhost:9000"
-ttab -t 'root-config' -d ./packages/main npm start
-ttab -t 'appshell' -d ./packages/appshell npm start
