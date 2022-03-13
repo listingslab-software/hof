@@ -1,7 +1,7 @@
 {
   "firestore": {
     "rules": "./packages/firebase/config/firestore.rules",
-    "indexes": "firestore.indexes.json"
+    "indexes": "./packages/firebase/config/firestore.indexes.json"
   },
   "functions": {
     "source": "packages/firebase",
@@ -25,6 +25,6 @@
     ]
   },
   "storage": {
-    "rules": "storage.rules"
+    "rules": "./packages/firebase/config/storage.rules"
   }
 }
