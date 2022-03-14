@@ -1,1 +1,0 @@
-console.warn ("ES6 node script. dist.mjs")

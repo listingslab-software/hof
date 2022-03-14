@@ -1,6 +1,6 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.3.0",
+  "version": "19.3.2",
   "scripts": {
     "start": "clear && npm run ssr",
     "test":  "clear && npx lerna run test",
@@ -9,11 +9,12 @@
     "shared": "clear && cd ./packages/shared && npm run start:standalone",
     "lint": "clear && npx lerna run lint",
     "format": "clear && npx lerna run format",
+    "files": "clear && cd ./packages/shared/public/files && npm start",
     "check": "clear && npm run format && npm run lint",
     "build": "clear && npx lerna run build && npm run dist",
-    "dist": "$PWD/.scripts/unix/dist 19.3.0",
+    "dist": "$PWD/.scripts/dist 19.3.2",
     "serve": "clear && serve dist -p 2022",
-    "ssr": "$PWD/.scripts/unix/ssr",
+    "ssr": "$PWD/.scripts/ssr",
     "functions": "clear && cd ./packages/firebase && npm run serve",
     "functions:watch": "clear && cd ./packages/firebase && npm run watch",
     "deploy": "clear && npm run format && npm run lint && npm run build && firebase deploy"
