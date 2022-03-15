@@ -7,3 +7,6 @@ echo 'Standalone Microfrontends; shared,' $1
 
 ttab -t 'shared' -d ./packages/shared npm run start:standalone
 ttab -t 'microfrontend' -d ./packages/$1 npm run start:standalone
+
+
+# "shared": "clear && cd ./packages/shared && npm run start:standalone",

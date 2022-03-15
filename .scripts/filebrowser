@@ -1,0 +1,8 @@
+#!/bin/bash
+# If you get permissions error, run this
+# chmod ug+x filebrowser
+clear
+
+echo 'Running filebrowser'
+
+# "files": "clear && cd ./packages/shared/public/files && npm start",

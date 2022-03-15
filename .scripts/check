@@ -1,0 +1,9 @@
+#!/bin/bash
+# If you get permissions error, run this
+# chmod ug+x check
+clear
+
+echo 'Checking (lint, prettify & test),'
+
+    # "lint": "clear && npx lerna run lint",
+    # "format": "clear && npx lerna run format",
