@@ -1,0 +1,8 @@
+#!/bin/bash
+# If you get permissions error, run this
+# chmod ug+x standalone
+clear
+
+echo 'Standalone' $1
+cd ./packages/$1 
+npm run start:standalone

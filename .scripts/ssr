@@ -3,12 +3,12 @@
 clear
 
 ttab -t 'functions' npm run functions
-sleep 10
 ttab -t 'watch' npm run functions:watch
 ttab -t 'appshell' npm run serve
 ttab -t 'root-config' -d ./packages/main npm start
 ttab -t 'menu' -d ./packages/menu npm start
 ttab -t 'shared' -d ./packages/shared npm start
+ttab -t 'filebrowser' -d ./packages/filebrowser npm start
 
 clear
 echo "Listingslab Single SPA with Server Side Rendering Started"
