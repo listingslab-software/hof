@@ -3,8 +3,8 @@
 # chmod ug+x check
 clear
 
-echo 'Prettifies, lints & tests'
+echo 'Prettifies, lints & then tests'
 
-npx lerna run check-format
+npx lerna run format
 npx lerna run lint
 npx lerna run test
