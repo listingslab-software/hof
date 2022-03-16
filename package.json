@@ -1,17 +1,18 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.3.4",
+  "version": "19.3.5",
   "scripts": {
-    "start": "clear && cd ./packages/root-config && npm run start",
+    "start": "npm run ssr",
     "test":  "clear && npx lerna run test",
     "bootstrap": "clear && npx lerna bootstrap",
     "single-spa": "clear && npx create-single-spa",
-    "build": "clear && npx lerna run build && npm run dist",
-    "dist": "$PWD/.scripts/dist 19.3.4",
+    "build": "clear && npx lerna run build",
+    "check": "$PWD/.scripts/check",
+    "dist": "$PWD/.scripts/dist 19.3.5",
     "serve": "clear && serve dist -p 2022",
     "ssr": "$PWD/.scripts/ssr",
     "standalone": "$PWD/.scripts/standalone filebrowser",
-    "deploy": "clear && npm run format && npm run lint && npm run build && firebase deploy"
+    "deploy": "clear && npm run check && npm run build && npm run dist && firebase deploy"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
