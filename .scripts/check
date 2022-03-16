@@ -3,7 +3,8 @@
 # chmod ug+x check
 clear
 
-echo 'Checking (lint, prettify & test),'
+echo 'Prettifies, lints & tests'
 
-    # "lint": "clear && npx lerna run lint",
-    # "format": "clear && npx lerna run format",
+npx lerna run check-format
+npx lerna run lint
+npx lerna run test
