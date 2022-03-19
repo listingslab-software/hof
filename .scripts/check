@@ -6,5 +6,5 @@ clear
 echo 'Prettifies, lints & then tests'
 
 npx lerna run format
-npx lerna run lint
+npx lerna run lint:fix
 npx lerna run test
