@@ -1,6 +1,6 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.4.2",
+  "version": "19.4.3",
   "scripts": {
     "start": "npm run ssr",
     "test":  "clear && npx lerna run test",
@@ -8,7 +8,7 @@
     "single-spa": "clear && npx create-single-spa",
     "build": "clear && npx lerna run build",
     "check": "$PWD/.scripts/check",
-    "dist": "$PWD/.scripts/dist 19.4.2",
+    "dist": "$PWD/.scripts/dist 19.4.3",
     "serve": "clear && serve dist -p 2022",
     "ssr": "$PWD/.scripts/ssr",
     "standalone": "$PWD/.scripts/standalone filebrowser",
