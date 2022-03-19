@@ -4,7 +4,7 @@ clear
 echo "Listingslab Single SPA with Server Side Rendering Started"
 ttab -t 'functions' -d ./packages/firebase npm run serve
 ttab -t 'watch' -d ./packages/firebase npm run watch
-ttab -t 'public' npm run serve
+ttab -t 'public' npm run serve --debug
 ttab -t 'root-config' -d ./packages/root-config npm run start
 ttab -t 'menu' -d ./packages/menu npm run start
 ttab -t 'shared' -d ./packages/shared npm run start
