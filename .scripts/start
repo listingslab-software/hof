@@ -1,13 +1,13 @@
 #!/bin/bash
-# chmod ug+x ssr
+# chmod ug+x start
 clear
 echo "Listingslab Single SPA with Server Side Rendering Started"
 
 # todo: run these in the background of a single tab
 
+ttab -t 'assets' npm run assets --debug
 ttab -t 'functions' -d ./packages/firebase npm run serve
 ttab -t 'watch' -d ./packages/firebase npm run watch
-ttab -t 'public' npm run serve --debug
 ttab -t 'root-config' -d ./packages/root-config npm run start
 ttab -t 'shared' -d ./packages/shared npm run start
 ttab -t 'article' -d ./packages/article npm run start
