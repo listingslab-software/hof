@@ -1,7 +1,7 @@
 ---
 name: An idea
-about: Got an idea you want to run by us?
-title: 'Proposition'
+about: Got an idea you want to run by us? This would be the place
+title: 'My idea...'
 assignees: 'listingslab'
 
 ---
