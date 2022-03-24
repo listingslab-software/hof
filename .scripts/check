@@ -5,9 +5,9 @@ clear
 
 echo 'Lerna bootstraps, formats with prettify, lints & then tests'
 
-# If runnng this is green, we can deploy
+# If runnng this is green, we may deploy
 
 npx lerna bootstrap
-npx lerna run format
-npx lerna run lint:fix
+npx lerna run check-format
+npx lerna run lint
 npx lerna run test
