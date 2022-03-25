@@ -6,11 +6,11 @@ echo "Listingslab Single SPA with Server Side Rendering Started"
 # todo: run these in the background of a single tab
 
 ttab -t 'assets' npm run assets --debug
-ttab -t 'functions' -d ./packages/firebase npm run serve
 ttab -t 'watch' -d ./packages/firebase npm run watch
 ttab -t 'root-config' -d ./packages/root-config npm run start
 ttab -t 'article' -d ./packages/article npm run start
 ttab -t 'persona' -d ./packages/persona npm run start
 ttab -t 'shared' -d ./packages/shared npm run start
+ttab -t 'functions' -d ./packages/firebase npm run serve
 
 echo "http://localhost:5001/listingslab-app/us-central1/SSR"
