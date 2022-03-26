@@ -9,7 +9,7 @@
     "build": "clear && npx lerna run build",
     "dist": "$PWD/.scripts/dist 19.6.0",
     "deploy": "clear && npm run check && npm run build && npm run dist && firebase deploy",
-    "assets": "clear && serve dist -p 2022",
+    "assets": "clear && serve dist -p 80",
     "single-spa": "clear && npx create-single-spa"
   },
   "devDependencies": {
