@@ -3,7 +3,7 @@
 # chmod ug+x check
 clear
 
-echo 'Lerna bootstraps, formats with prettify, lints & then tests'
+echo 'Lerna bootstraps, formats with prettify, lints & tests'
 
 # If runnng this is green, we may deploy
 

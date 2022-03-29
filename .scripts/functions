@@ -1,10 +1,9 @@
 #!/bin/bash
 # chmod ug+x functions
 clear
-echo "Starting firebase functions (API & SSR)"
+echo "Start and watch firebase functions (ASSETS & SSR)"
 
-ttab -t 'assets' npm run assets
 ttab -t 'watch' -d ./packages/firebase npm run watch
 ttab -t 'functions' -d ./packages/firebase npm run start
 
-echo "http://localhost:5001/listingslab-app/us-central1/API"
+echo "http://localhost:5001/listingslab-app/us-central1/SSR"
