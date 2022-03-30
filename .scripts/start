@@ -4,9 +4,7 @@ clear
 echo "Server Side Rendering Started"
 
 ttab -t 'root-config' -d ./packages/root-config npm run start
-ttab -t 'persona' -d ./packages/persona npm run start
 ttab -t 'shared' -d ./packages/shared npm run start
-ttab -t 'viewer' -d ./packages/viewer npm run start
 ttab -t 'flash' -d ./packages/flash npm run start
 ttab -t 'watch' -d ./packages/firebase npm run watch
 ttab -t 'functions' -d ./packages/firebase npm run serve
