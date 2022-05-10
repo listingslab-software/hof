@@ -1,12 +1,12 @@
 {
   "name": "@listingslab/hof",
-  "version": "19.7.9",
+  "version": "19.8.0",
   "scripts": {
     "start": "$PWD/.scripts/start",
     "test":  "clear && npx lerna run test",
     "check": "$PWD/.scripts/check",
     "build": "clear && npx lerna run build",
-    "dist": "$PWD/.scripts/dist 19.7.9",
+    "dist": "$PWD/.scripts/dist 19.8.0",
     "deploy": "clear && npm run check && npm run build && npm run dist && firebase deploy",
     "single-spa": "clear && npx create-single-spa"
   },
