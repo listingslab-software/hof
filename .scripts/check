@@ -2,12 +2,10 @@
 # If you get permissions error, run this
 # chmod ug+x check
 clear
-
-echo 'Lerna bootstraps, formats with prettify, lints & tests'
+echo 'Lerna bootstraps, formats with prettify, lints all packages'
 
 # If runnng this is green, we may deploy
-
 npx lerna bootstrap
 npx lerna run format
 npx lerna run lint
-npx lerna run test
+# npx lerna run test

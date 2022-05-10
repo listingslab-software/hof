@@ -3,7 +3,7 @@
   "version": "19.8.0",
   "scripts": {
     "start": "$PWD/.scripts/start",
-    "test":  "clear && npx lerna run test",
+    "test":  "clear && npx jest",
     "check": "$PWD/.scripts/check",
     "build": "clear && npx lerna run build",
     "dist": "$PWD/.scripts/dist 19.8.0",
