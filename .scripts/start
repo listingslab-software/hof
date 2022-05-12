@@ -1,12 +1,10 @@
 #!/bin/bash
 # chmod ug+x start
 clear
-echo "Server Side Rendering Started"
+echo "Starting Server Side Rendering "
 
-ttab -t 'root-config' -d ./packages/root-config npm run start
-ttab -t 'admin' -d ./packages/admin npm run start
 ttab -t 'shared' -d ./packages/shared npm run start
-ttab -t 'flash' -d ./packages/flash npm run start
+ttab -t 'root-config' -d ./packages/root-config npm run start
 ttab -t 'watch' -d ./packages/firebase-ts/functions tsc-watch
 ttab -t 'functions' -d ./packages/firebase-ts/functions npm run serve
 
